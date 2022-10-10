@@ -1,0 +1,15 @@
+D:\SofturaTrainingStuff\WFM_Assessment_Task\WFM_Core\bin\Debug\net6.0\WFM_Core.deps.json
+D:\SofturaTrainingStuff\WFM_Assessment_Task\WFM_Core\bin\Debug\net6.0\WFM_Core.dll
+D:\SofturaTrainingStuff\WFM_Assessment_Task\WFM_Core\bin\Debug\net6.0\WFM_Core.pdb
+D:\SofturaTrainingStuff\WFM_Assessment_Task\WFM_Core\bin\Debug\net6.0\WFM_Domain.dll
+D:\SofturaTrainingStuff\WFM_Assessment_Task\WFM_Core\bin\Debug\net6.0\WFM_Domain.pdb
+D:\SofturaTrainingStuff\WFM_Assessment_Task\WFM_Core\obj\Debug\net6.0\WFM_Core.csproj.AssemblyReference.cache
+D:\SofturaTrainingStuff\WFM_Assessment_Task\WFM_Core\obj\Debug\net6.0\WFM_Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\SofturaTrainingStuff\WFM_Assessment_Task\WFM_Core\obj\Debug\net6.0\WFM_Core.AssemblyInfoInputs.cache
+D:\SofturaTrainingStuff\WFM_Assessment_Task\WFM_Core\obj\Debug\net6.0\WFM_Core.AssemblyInfo.cs
+D:\SofturaTrainingStuff\WFM_Assessment_Task\WFM_Core\obj\Debug\net6.0\WFM_Core.csproj.CoreCompileInputs.cache
+D:\SofturaTrainingStuff\WFM_Assessment_Task\WFM_Core\obj\Debug\net6.0\WFM_Core.csproj.CopyComplete
+D:\SofturaTrainingStuff\WFM_Assessment_Task\WFM_Core\obj\Debug\net6.0\WFM_Core.dll
+D:\SofturaTrainingStuff\WFM_Assessment_Task\WFM_Core\obj\Debug\net6.0\refint\WFM_Core.dll
+D:\SofturaTrainingStuff\WFM_Assessment_Task\WFM_Core\obj\Debug\net6.0\WFM_Core.pdb
+D:\SofturaTrainingStuff\WFM_Assessment_Task\WFM_Core\obj\Debug\net6.0\ref\WFM_Core.dll

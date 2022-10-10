@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using WFM_Domain.Models;
+
+namespace WFM_Domain.ViewModel
+{
+    public class SkillsWithEmployee
+    {
+        public int SkillId { get; set; }
+        public string Name { get; set; }
+        public List<Employee> Employees { get; set; }
+    }
+}

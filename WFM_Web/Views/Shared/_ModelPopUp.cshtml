@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["ModelPopUp"] = "";
+}
+
+
+@*<!-- Modal -->  data-bs-backdrop="static"  data-bs-keyboard="false"*@
+@*<div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color : DodgerBlue;">
+                <h5 class="modal-title" id="staticBackdropLabel">Soft Lock Request Confirmation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p style="font-weight: bold;">Please confirm the lock request for : <label id="showCandidateId"></label></p> 
+                <br />
+                <p style="font-weight: bold;">Request Message</p>
+                <textarea id="reqMessage" name="requestMsg" rows="4" cols="50" placeholder="Please put a request contents..!"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="softLockCancel" class="btn btn-dark" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" id="softLockReq" class="btn btn-primary">Send Request</button>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+<!--------------------------------------- Normal Model -------------->
+<div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color : DodgerBlue;">
+                <h5 class="modal-title" id="staticBackdropLabel">Soft Lock Request Confirmation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p style="font-weight: bold;">Please confirm the lock request for : <label id="showCandidateId"></label></p> 
+                <br />
+                <p style="font-weight: bold;">Request Message</p>
+                <textarea id="reqMessage" name="requestMsg" rows="4" cols="50" placeholder="Please put a request contents..!"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="softLockCancel" class="btn btn-dark" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" id="softLockReq" class="btn btn-primary">Send Request</button>
+            </div>
+        </div>
+    </div>
+</div>

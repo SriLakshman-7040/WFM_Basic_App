@@ -1,0 +1,95 @@
+﻿@model IEnumerable<WFM_Domain.ViewModel.SoftLockDto>
+@{
+    ViewData["Title"] = "Request Waiting Candidate List";
+}
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/deb77551de.js" crossorigin="anonymous"></script>
+
+
+<style>
+    .collapsetable {
+        border-collapse: collapse;
+        border: 3px solid white;
+    }
+
+    h4 {
+        color: DodgerBlue;
+    }
+
+    table, th, td {
+        border: 1px solid white;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    tr {
+        color: white;
+    }
+
+    body {
+        background-color: black;
+    }
+</style>
+
+<h4 style="text-align:center;">Request Waiting Resources List</h4>
+<br />
+
+
+<table class="collapsetable" id="reqCandidateListTbl" border="1" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeeID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Manager)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReqDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Manager)
+            </th>
+            <th style="display:none;">
+                @Html.DisplayNameFor(model => model.RequestMessage)
+            </th>
+            <th>
+                View Candidate Details
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="employeeid">
+                    @item.EmployeeID
+                </td>
+                <td class="employeeManager">
+                    @item.Manager
+                </td>
+                <td class="requestDate">
+                    @item.ReqDate
+                </td>
+                <td class="managerName">
+                    @item.Manager
+                </td>
+                <td class="messageDes" style="display:none;">
+                    @item.RequestMessage
+                </td>
+                <td>
+                    <button id="reqCandidateDetailsModal" onclick="showreqWaitingModal()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-regular fa-eye"></i>&nbsp;View Details</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section Scripts{
+<script src="~/js/MemberLandingPageJS.js" type="text/javascript"></script>
+
+@{
+    await Html.RenderPartialAsync("_MemberModalPopUp");
+}
+}

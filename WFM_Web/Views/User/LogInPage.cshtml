@@ -1,0 +1,96 @@
+﻿@model WFM_Web.Models.UserLoginModel;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WFM_Web.styles.css" asp-append-version="true" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <style>
+        .btn {
+            padding: 0.5rem 6rem;
+            font-size: -0.75rem;
+            border-radius: 3.3rem;
+        }
+
+        h3, h6 {
+            color: DodgerBlue;
+        }
+
+        h6 {
+            margin-right: -33px;
+            margin-top: 1px;
+            margin-bottom: 1.5rem;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        #loginCard {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 95vh;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="row d-flex justify-content-center col-12" id="loginCard">
+            <div class="col-4 border border-primary rounded m-20">
+                <form id="account" method="post" class="py-5">
+                    <div class="d-flex justify-content-center">
+                        @*<i class="icon-map-marker icon-4x text-success"></i>*@
+                        <h3>WFM User Login</h3>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        @*<h1 class="h3 mb-3 font-weight-normal">&nbsp;  Login</h1>*@
+                        <center><h6>Resource Management</h6></center>
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="username" asp-for="Username" class="form-control" placeholder="Username" required autofocus />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                        <br />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="secret" asp-for="Password" class="form-control" placeholder="Password" required />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                        <br />
+                    </div>
+                    <div class="form-group">
+                        <center>
+                            <button type="submit" class="btn btn-lg btn-primary btn-block" id="loginsubmitBtn">Log in</button>
+                        </center>
+                    </div>
+                </form>
+                <div class="row col-12">
+                    <center>
+                        <p class="col-12">
+                            @*<a asp-page="/RegistrationPage" id="registerNewUser">Register as a new user</a>*@
+                            <a href="/User/UserRegistration">Register as a New User</a>
+                            @* @Html.ActionLink("Register as a new user", "UserRegistration", "User")*@
+                        </p>
+                        @* <p class="col-11" hidden>
+                            <a asp-page="" asp-route-returnUrl="">Forgot your password?</a>
+                            </p>*@
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+@*<script src="~/js/LoginPage.js"></script>*@
+@section Scripts{
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}
